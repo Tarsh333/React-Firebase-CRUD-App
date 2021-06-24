@@ -4,7 +4,7 @@ See:  [ https://todo-app-react-5db55.web.app/ ](https://todo-app-react-5db55.web
 
 This CRUD App Or Todo App allows to preform all the operations like create , modify and delete. The data is stored in firebase cloud database and is fetched directly.The website is hosted on firebase platform.
 
-![website screenshot]()
+![website screenshot](https://raw.githubusercontent.com/Tarsh333/React-Firebase-CRUD-App/master/Screenshot.png)
 
 ### Acknowledgement
     
