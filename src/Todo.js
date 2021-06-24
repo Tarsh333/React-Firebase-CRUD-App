@@ -3,9 +3,9 @@ import { FaEdit, FaTrashAlt } from 'react-icons/fa';
 function Todo({ todos,deleteItem,editItem }) {
     return (
         <div>
-            {todos.map((data) => {
+            {todos.map((data , index) => {
                 return (
-                    <article>
+                    <article key={index}>
                         <p className='todo'>{data.title}</p>
                         <div className='btns'>
 

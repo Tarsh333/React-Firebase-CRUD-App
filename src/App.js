@@ -1,7 +1,7 @@
 import './App.css';
 import { useState,useEffect } from 'react'
 import Todo from './Todo';
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 import Alert from './Alert';
 import db from './firebase';
 import firebase from 'firebase';
@@ -56,6 +56,8 @@ function App() {
   const deleteItem = (id) => {
     // setTodos(todos.filter((data) => { return (data.id !== id) })) // no need of this as directly deleting in database which in turn change state directly
     setAlert({ message: 'item deleted', type: 'danger', show: true })
+    setIsEditing(false)
+    setInput('')
     db.collection('todos').doc(id).delete()
   }
   const editItem = (id) => {
